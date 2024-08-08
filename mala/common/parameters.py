@@ -367,6 +367,8 @@ class ParametersDescriptors(ParametersBase):
 
         # ace descriptors
         self.ace_elements = ["Al", "G"]
+        #NOTE that if types_like_snap=True, you will instead need for your ace_elements:
+        #self.ace_elements = ["Al"]
         self.ace_mumax = len(self.ace_elements)
         self.ace_ranks = [1, 2, 3]
         self.ace_nmax = [6, 2, 2]
@@ -393,6 +395,7 @@ class ParametersDescriptors(ParametersBase):
         self.ace_types_like_snap = False
         self.ace_padfunc = True
 
+        
 
     @property
     def use_z_splitting(self):
